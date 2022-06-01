@@ -28,7 +28,7 @@ package = "mongo_connector.service"
 
 def install():
     log_path.mkdir(exist_ok=True)
-    init_script.dirname().makedirs_p()
+    init_script.parent.mkdir(parents=True, exist_ok=True)
     with res.path(package, "config.json") as config_src_path:
         shutil.copyfile(config_src_path, config_file)
     with res.path(package, "System V init") as init_src_path:

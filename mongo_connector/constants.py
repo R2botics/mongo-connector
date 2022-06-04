@@ -12,11 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
-import importlib_metadata
-
-
-__version__ = importlib_metadata.version("mongo_connector")
+__version__ = "3.1.2"
 
 
 # Maximum # of documents to process before recording timestamp

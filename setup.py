@@ -40,7 +40,6 @@ setup(
     classifiers=filter(None, classifiers.split("\n")),
     install_requires=[
         "pymongo >= 2.9",
-        "importlib_metadata>=0.6",
         "autocommand",
         "importlib_resources",
     ],
